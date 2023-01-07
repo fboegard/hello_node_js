@@ -12,6 +12,11 @@
  
 <body>
  <script>
+      fetch('https://api.sl.se/api2/realtimedeparturesV4.json?key=636305016cbc4d5b9311c8f91afdf28a&siteid=9262&timewindow=10')
+          .then(res => res.json()) // the .json() method parses the JSON response into a JS object literal
+           .then(data => console.log(data));
+  
+  
       let d = new Date();
       document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
   </script>
