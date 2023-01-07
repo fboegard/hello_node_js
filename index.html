@@ -12,7 +12,17 @@
  
 <body>
  <script>
-      fetch('https://api.sl.se/api2/realtimedeparturesV4.json?key=636305016cbc4d5b9311c8f91afdf28a&siteid=9262&timewindow=10')
+  
+ // fetch(url, { 
+ //                   method: 'GET', 
+ //                   headers: headers, 
+ //                   mode: 'no-cors', 
+ //                   credentials: 'include' })
+      fetch('https://api.sl.se/api2/realtimedeparturesV4.json?key=636305016cbc4d5b9311c8f91afdf28a&siteid=9262&timewindow=10',
+           {        method: 'GET', 
+                    headers: headers, 
+                    mode: 'no-cors', 
+                    credentials: 'include' })
           .then(res => res.json()) // the .json() method parses the JSON response into a JS object literal
            .then(data => console.log(data));
   
