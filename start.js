@@ -1,2 +1,7 @@
 let d = new Date();
-document.body.innerHTML += "<h2>Today's date is " + d + "</h2>"
+let datetext = "<h2>Today's date is " + d + "</h2>"
+
+window.onload = function() {
+        document.getElementById("h1_Text").innerHTML = datetext;
+    }
+
